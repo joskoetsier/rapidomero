@@ -3,7 +3,8 @@ import yaml
 import StringIO
 import time
 import jobhandler
-from common.constants import Constants
+import functools
+import common.config as config
 
 class AMQPLoop:
     
@@ -22,21 +23,29 @@ class AMQPLoop:
     def __on_channel_open(self, new_channel):
         """Called when our channel has opened"""
         AMQPLoop.__channel = new_channel
-        AMQPLoop.__channel.queue_declare(queue=Constants.job_queue, durable=True, exclusive=False, auto_delete=False, callback=AMQPLoop.__on_queue_declared)
+        """Add a queue for each element in config"""
+        queue_configs = config.get_queue_configs()
+        for queue_config in queue_configs:
+            print "Channel open for: "+queue_config["queue"]
+            AMQPLoop.__channel.queue_declare(queue=queue_config["queue"], durable=True, exclusive=False, auto_delete=False, 
+                                             callback=functools.partial(AMQPLoop.__on_queue_declared, queue_config=queue_config))
 
     # Step #4
     @classmethod
-    def __on_queue_declared(self, frame):
+    def __on_queue_declared(self, frame, queue_config=None):
         """Called when RabbitMQ has told us our Queue has been declared, frame is the response from RabbitMQ"""
-        AMQPLoop.__channel.basic_consume(AMQPLoop.__handle_delivery, queue=Constants.job_queue)
+        """Add partial function so we can pass the name of the queue to __handle_delivery"""
+        print "Consume at: "+queue_config["queue"]
+        AMQPLoop.__channel.basic_consume(functools.partial(AMQPLoop.__handle_delivery, queue_config=queue_config), 
+                                         queue=queue_config["queue"])
     
     # Step #5
     @classmethod
-    def __handle_delivery(self, channel, method, header, body):
+    def __handle_delivery(self, channel, method, header, body, queue_config):
         """Called when we receive a message from RabbitMQ"""
         stream = StringIO.StringIO(body)
         dictionary = yaml.load(stream)
-        handler = jobhandler.Job_handler(dictionary)
+        handler = jobhandler.Job_handler(queue_config, dictionary)
         handler.start()
         channel.basic_ack(delivery_tag = method.delivery_tag)
         
