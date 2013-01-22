@@ -47,3 +47,6 @@ def dict_to_description(dictionary):
     print description
         
     return description
+
+def generate_queue_name(queue_config):
+    return queue_config["queue"]+":"+queue_config["service"]["name"]

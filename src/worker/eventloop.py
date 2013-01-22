@@ -41,11 +41,11 @@ class AMQPLoop:
     
     # Step #5
     @classmethod
-    def __handle_delivery(self, channel, method, header, body, queue_config):
+    def __handle_delivery(self, channel, method, properties, body, queue_config):
         """Called when we receive a message from RabbitMQ"""
         stream = StringIO.StringIO(body)
         dictionary = yaml.load(stream)
-        handler = jobhandler.Job_handler(queue_config, dictionary)
+        handler = jobhandler.Job_handler(queue_config, dictionary, properties.reply_to)
         handler.start()
         channel.basic_ack(delivery_tag = method.delivery_tag)
         
