@@ -4,13 +4,16 @@ import StringIO
 import time
 import jobhandler
 import functools
+import threading
 import common.config as config
 
 class AMQPLoop:
     
     # Create a channel variable to hold our channel object in
     __channel = None
-    
+    __event = threading.Event()
+    __max_threads =5 
+    __thread_list = []
     # Step #2
     @classmethod
     def __on_connected(self, connection):
@@ -45,10 +48,23 @@ class AMQPLoop:
         """Called when we receive a message from RabbitMQ"""
         stream = StringIO.StringIO(body)
         dictionary = yaml.load(stream)
-        handler = jobhandler.Job_handler(queue_config, dictionary, properties.reply_to)
+        handler = jobhandler.Job_handler(queue_config, dictionary, properties.reply_to, AMQPLoop.__event)
         handler.start()
+        AMQPLoop.__thread_list.append(handler)
+        
         channel.basic_ack(delivery_tag = method.delivery_tag)
         
+        #If the number of active threads is too high, wait for event
+        #Race condition
+        if (len(AMQPLoop.__thread_list)>AMQPLoop.__max_threads):
+            AMQPLoop.__event.clear()
+            AMQPLoop.__event.wait()
+            
+        for h in AMQPLoop.__thread_list:
+            h.join(1)
+            if h.isAlive() is False:
+                AMQPLoop.__thread_list.remove(h)
+
     @classmethod
     def start(self, ):
         parameters = pika.ConnectionParameters()

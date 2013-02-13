@@ -1,4 +1,5 @@
 import bliss.saga.job
+import string
 
 def description_to_dict(description):
     dictionary = dict()
@@ -7,6 +8,15 @@ def description_to_dict(description):
         dictionary[key] = description.get_attribute(key)
     return dictionary
 
+def resolve(data, variables):
+    if isinstance(data, list):
+        return [resolve(v, variables) for v in data]
+    if isinstance(data, dict):
+        return dict((k, resolve(v, variables)) for k, v in data.iteritems())
+    if isinstance(data, str):
+        return string.Template(data).substitute(variables) 
+    return ""
+   
 def dict_to_description(dictionary):
     
     #lowercase all keys. Makes the config file more forgiving
@@ -42,10 +52,7 @@ def dict_to_description(dictionary):
     if (lower_dictionary.has_key("project")):
         description.project = lower_dictionary["project"]
     if (lower_dictionary.has_key("filetransfer")):
-        description.filetransfer = lower_dictionary["filetransfer"]   
-    
-    print description
-        
+        description.filetransfer = lower_dictionary["filetransfer"]           
     return description
 
 def generate_queue_name(queue_config):
