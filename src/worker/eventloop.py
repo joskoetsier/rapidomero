@@ -48,6 +48,7 @@ class AMQPLoop:
         """Called when we receive a message from RabbitMQ"""
         stream = StringIO.StringIO(body)
         dictionary = yaml.load(stream)
+        print str(dictionary)
         handler = jobhandler.Job_handler(queue_config, dictionary, properties.reply_to, AMQPLoop.__event)
         handler.start()
         AMQPLoop.__thread_list.append(handler)
