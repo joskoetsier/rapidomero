@@ -2,8 +2,8 @@ import pika
 import sys
 import logging
 import yaml
-import bliss.saga.job
-import common.utils
+import saga.job
+import rapidomero.common.utils
 import uuid
 from common.constants import Constants
 

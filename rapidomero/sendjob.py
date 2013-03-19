@@ -1,6 +1,5 @@
-import producer.send
-import common.config
-
+import rapidomero.producer.send
+import rapidomero.common.config
 
 def callback(body):
     print body

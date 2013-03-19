@@ -1,0 +1,937 @@
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1061deef0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1061e7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+ERROR:pika.adapters.base_connection:socket error: Connection refused
+WARNING:pika.adapters.base_connection:Could not connect due to "Connection refused," retrying in 2 sec
+ERROR:pika.adapters.base_connection:Could not connect: Connection refused
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1085f5ef0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1085fea90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+ERROR:pika.adapters.base_connection:socket error: Connection refused
+WARNING:pika.adapters.base_connection:Could not connect due to "Connection refused," retrying in 2 sec
+ERROR:pika.adapters.base_connection:Could not connect: Connection refused
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x10e326ef0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10e32fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+ERROR:pika.adapters.base_connection:socket error: Connection refused
+WARNING:pika.adapters.base_connection:Could not connect due to "Connection refused," retrying in 2 sec
+ERROR:pika.adapters.base_connection:Could not connect: Connection refused
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1047beef0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x1047c7d50>> on or after 1363702512
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1047beef0>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x1047c7dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x1047c7dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x1047c7dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x1047c7dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1047c7dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x1047c7dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1047c7a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1047c7dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x1047c7dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1047c7dd0>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x1047c7dd0>> for "1:Channel.OpenOk"
+ERROR:root:Could not open configuration file: /Users/jos/rapidomero/src/config.yaml
+INFO:pika.connection:Closing connection (200): Normal shutdown
+DEBUG:pika.adapters.select_connection:Stopping the poller event loop
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x105efce90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x105f05d10>> on or after 1363703006
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x105efce90>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x105f05d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x105f05d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x105f05d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x105f05d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x105f05d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x105f05d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x105f05a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x105f05d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x105f05d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x105f05d90>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x105f05d90>> for "1:Channel.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x10982de90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x109838d10>> on or after 1363703045
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x10982de90>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x109838d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x109838d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x109838d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x109838d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x109838d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x109838d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109838a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x109838d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x109838d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x109838d90>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x109838d90>> for "1:Channel.OpenOk"
+ERROR:root:Could not open configuration file: /Users/jos/rapidomero/src/config.yaml
+INFO:pika.connection:Closing connection (200): Normal shutdown
+DEBUG:pika.adapters.select_connection:Stopping the poller event loop
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x104813e90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x10481bd10>> on or after 1363703052
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x104813e90>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x10481bd90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x10481bd90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x10481bd90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x10481bd90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10481bd90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x10481bd90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10481ba50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10481bd90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x10481bd90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10481bd90>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x10481bd90>> for "1:Channel.OpenOk"
+ERROR:root:Could not open configuration file: /dfafa
+INFO:pika.connection:Closing connection (200): Normal shutdown
+DEBUG:pika.adapters.select_connection:Stopping the poller event loop
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1009bbe90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x1009c3d10>> on or after 1363703066
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1009bbe90>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x1009c3d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x1009c3d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x1009c3d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x1009c3d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1009c3d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x1009c3d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1009c3a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1009c3d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x1009c3d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1009c3d90>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x1009c3d90>> for "1:Channel.OpenOk"
+ERROR:root:Could not open configuration file: /Users/jos/rapidomero/src/config.yaml
+INFO:pika.connection:Closing connection (200): Normal shutdown
+DEBUG:pika.adapters.select_connection:Stopping the poller event loop
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x10cbece90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x10cbf4d10>> on or after 1363703119
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x10cbece90>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x10cbf4d90>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramid'}, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <functools.partial object at 0x10cd424c8>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramid'}, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.Declare(['passive=False', 'nowait=False', 'exclusive=False', 'durable=True', 'queue=pyramid', 'arguments={}', 'ticket=0', 'auto_delete=False'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(4)
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <functools.partial object at 0x10cbee730>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.Declare(['passive=False', 'nowait=False', 'exclusive=False', 'durable=True', 'queue=pyramidft', 'arguments={}', 'ticket=0', 'auto_delete=False'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(5)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.DeclareOk(['queue=pyramid', 'message_count=0', 'consumer_count=0'])>"])>
+DEBUG:pika.callback:Processing 1:Queue.DeclareOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'queue': 'pyramid'} to {'queue': 'pyramidft'}
+DEBUG:pika.callback:Values in dict do not match for queue
+DEBUG:pika.callback:Comparing {'queue': 'pyramid'} to {'queue': 'pyramid'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramid'}, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'queue': 'pyramid'} to {'queue': 'pyramid'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <functools.partial object at 0x10cd424c8>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramid'}, 'calls': 0}
+DEBUG:pika.callback:Values in <class 'pika.spec.DeclareOk'> do not match for queue
+DEBUG:pika.callback:Arguments do not match for {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 1}, [<METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.DeclareOk(['queue=pyramid', 'message_count=0', 'consumer_count=0'])>"])>]
+DEBUG:pika.callback:Values in <class 'pika.spec.DeclareOk'> do not match for queue
+DEBUG:pika.callback:Arguments do not match for {'callback': <functools.partial object at 0x10cbee730>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 1}, [<METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.DeclareOk(['queue=pyramid', 'message_count=0', 'consumer_count=0'])>"])>]
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>> for "1:Queue.DeclareOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <functools.partial object at 0x10cd424c8> for "1:Queue.DeclareOk"
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0'}, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0'}, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.Consume(['exclusive=False', 'nowait=False', 'no_local=False', 'consumer_tag=ctag1.0', 'queue=pyramid', 'arguments={}', 'ticket=0', 'no_ack=False'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(5)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.DeclareOk(['queue=pyramidft', 'message_count=0', 'consumer_count=0'])>"])>
+DEBUG:pika.callback:Processing 1:Queue.DeclareOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'queue': 'pyramidft'} to {'queue': 'pyramidft'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'queue': 'pyramidft'} to {'queue': 'pyramidft'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <functools.partial object at 0x10cbee730>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>> for "1:Queue.DeclareOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <functools.partial object at 0x10cbee730> for "1:Queue.DeclareOk"
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.Consume(['exclusive=False', 'nowait=False', 'no_local=False', 'consumer_tag=ctag1.1', 'queue=pyramidft', 'arguments={}', 'ticket=0', 'no_ack=False'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(5)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0'])>"])>
+DEBUG:pika.callback:Processing 1:Basic.ConsumeOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.0'} to {'consumer_tag': 'ctag1.1'}
+DEBUG:pika.callback:Values in dict do not match for consumer_tag
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.0'} to {'consumer_tag': 'ctag1.0'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0'}, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.0'} to {'consumer_tag': 'ctag1.1'}
+DEBUG:pika.callback:Values in dict do not match for consumer_tag
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.0'} to {'consumer_tag': 'ctag1.0'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0'}, 'calls': 0}
+DEBUG:pika.callback:Values in <class 'pika.spec.ConsumeOk'> do not match for consumer_tag
+DEBUG:pika.callback:Arguments do not match for {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 1}, [<METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0'])>"])>]
+DEBUG:pika.callback:Values in <class 'pika.spec.ConsumeOk'> do not match for consumer_tag
+DEBUG:pika.callback:Arguments do not match for {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 1}, [<METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0'])>"])>]
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>> for "1:Basic.ConsumeOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x10cbf4d90>> for "1:Basic.ConsumeOk"
+DEBUG:pika.channel:Discarding frame <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10cbf4a50>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.1'])>"])>
+DEBUG:pika.callback:Processing 1:Basic.ConsumeOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.1'} to {'consumer_tag': 'ctag1.1'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.1'} to {'consumer_tag': 'ctag1.1'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x10cbf4d90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10cbf4d90>> for "1:Basic.ConsumeOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x10cbf4d90>> for "1:Basic.ConsumeOk"
+DEBUG:pika.channel:Discarding frame <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.1'])>"])>
+INFO:pika.connection:Closing connection (200): Normal shutdown
+DEBUG:pika.adapters.select_connection:Stopping the poller event loop
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1058c58f0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x1059a9d50>> on or after 1363703216
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1058c58f0>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x1059a9dd0>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramid'}, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <functools.partial object at 0x105af74c8>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramid'}, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.Declare(['passive=False', 'nowait=False', 'exclusive=False', 'durable=True', 'queue=pyramid', 'arguments={}', 'ticket=0', 'auto_delete=False'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(4)
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <functools.partial object at 0x1059a3730>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.Declare(['passive=False', 'nowait=False', 'exclusive=False', 'durable=True', 'queue=pyramidft', 'arguments={}', 'ticket=0', 'auto_delete=False'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(5)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.DeclareOk(['queue=pyramid', 'message_count=0', 'consumer_count=0'])>"])>
+DEBUG:pika.callback:Processing 1:Queue.DeclareOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'queue': 'pyramid'} to {'queue': 'pyramidft'}
+DEBUG:pika.callback:Values in dict do not match for queue
+DEBUG:pika.callback:Comparing {'queue': 'pyramid'} to {'queue': 'pyramid'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramid'}, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'queue': 'pyramid'} to {'queue': 'pyramid'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <functools.partial object at 0x105af74c8>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramid'}, 'calls': 0}
+DEBUG:pika.callback:Values in <class 'pika.spec.DeclareOk'> do not match for queue
+DEBUG:pika.callback:Arguments do not match for {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 1}, [<METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.DeclareOk(['queue=pyramid', 'message_count=0', 'consumer_count=0'])>"])>]
+DEBUG:pika.callback:Values in <class 'pika.spec.DeclareOk'> do not match for queue
+DEBUG:pika.callback:Arguments do not match for {'callback': <functools.partial object at 0x1059a3730>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 1}, [<METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.DeclareOk(['queue=pyramid', 'message_count=0', 'consumer_count=0'])>"])>]
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>> for "1:Queue.DeclareOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <functools.partial object at 0x105af74c8> for "1:Queue.DeclareOk"
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0'}, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0'}, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.Consume(['exclusive=False', 'nowait=False', 'no_local=False', 'consumer_tag=ctag1.0', 'queue=pyramid', 'arguments={}', 'ticket=0', 'no_ack=False'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(5)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Queue.DeclareOk(['queue=pyramidft', 'message_count=0', 'consumer_count=0'])>"])>
+DEBUG:pika.callback:Processing 1:Queue.DeclareOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'queue': 'pyramidft'} to {'queue': 'pyramidft'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'queue': 'pyramidft'} to {'queue': 'pyramidft'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <functools.partial object at 0x1059a3730>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'pyramidft'}, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>> for "1:Queue.DeclareOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <functools.partial object at 0x1059a3730> for "1:Queue.DeclareOk"
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.Consume(['exclusive=False', 'nowait=False', 'no_local=False', 'consumer_tag=ctag1.1', 'queue=pyramidft', 'arguments={}', 'ticket=0', 'no_ack=False'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(5)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0'])>"])>
+DEBUG:pika.callback:Processing 1:Basic.ConsumeOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.0'} to {'consumer_tag': 'ctag1.1'}
+DEBUG:pika.callback:Values in dict do not match for consumer_tag
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.0'} to {'consumer_tag': 'ctag1.0'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0'}, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.0'} to {'consumer_tag': 'ctag1.1'}
+DEBUG:pika.callback:Values in dict do not match for consumer_tag
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.0'} to {'consumer_tag': 'ctag1.0'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0'}, 'calls': 0}
+DEBUG:pika.callback:Values in <class 'pika.spec.ConsumeOk'> do not match for consumer_tag
+DEBUG:pika.callback:Arguments do not match for {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 1}, [<METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0'])>"])>]
+DEBUG:pika.callback:Values in <class 'pika.spec.ConsumeOk'> do not match for consumer_tag
+DEBUG:pika.callback:Arguments do not match for {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 1}, [<METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0'])>"])>]
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>> for "1:Basic.ConsumeOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x1059a9dd0>> for "1:Basic.ConsumeOk"
+DEBUG:pika.channel:Discarding frame <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x1059a9a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.1'])>"])>
+DEBUG:pika.callback:Processing 1:Basic.ConsumeOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.1'} to {'consumer_tag': 'ctag1.1'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Comparing {'consumer_tag': 'ctag1.1'} to {'consumer_tag': 'ctag1.1'}
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x1059a9dd0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.1'}, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x1059a9dd0>> for "1:Basic.ConsumeOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x1059a9dd0>> for "1:Basic.ConsumeOk"
+DEBUG:pika.channel:Discarding frame <METHOD(['frame_type=1', 'channel_number=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.1'])>"])>
+INFO:pika.connection:Closing connection (200): Normal shutdown
+DEBUG:pika.adapters.select_connection:Stopping the poller event loop
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x100777e90>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x10077fd50>> on or after 1363703220
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x100777e90>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x10077fdd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x10077fdd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x10077fdd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x10077fdd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10077fdd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x10077fdd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10077fa90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10077fdd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x10077fdd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10077fdd0>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x10077fdd0>> for "1:Channel.OpenOk"
+ERROR:root:Could not open configuration file: config.yaml
+INFO:pika.connection:Closing connection (200): Normal shutdown
+DEBUG:pika.adapters.select_connection:Stopping the poller event loop
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x104376a70>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x10445ad50>> on or after 1363703242
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x104376a70>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x10445add0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x10445add0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x10445add0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x10445add0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10445add0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x10445add0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x10445aa90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10445add0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x10445add0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x10445add0>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x10445add0>> for "1:Channel.OpenOk"
+ERROR:root:Could not open configuration file: /Users/jos/rapidomero/rapidomero/config.yaml,vh
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x109add8f0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+DEBUG:pika.adapters.select_connection:Starting the Poller
+DEBUG:pika.adapters.select_connection:Using KQueuePoller
+DEBUG:pika.connection:Frame: <ProtocolHeader(['frame_type=-1', 'major=0', 'minor=9', 'revision=1'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(4)
+DEBUG:pika.connection:Connected
+DEBUG:pika.adapters.select_connection:Starting IOLoop
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.Start(["server_properties={\'information\': \'Licensed under the MPL.  See http://www.rabbitmq.com/\', \'product\': \'RabbitMQ\', \'copyright\': \'Copyright (C) 2007-2012 VMware, Inc.\', \'capabilities\': {\'exchange_exchange_bindings\': True, \'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'platform\': \'Erlang/OTP\', \'version\': \'3.0.1\'}", \'version_minor=9\', \'mechanisms=PLAIN AMQPLAIN\', \'locales=en_US\', \'version_major=0\'])>'])>
+DEBUG:pika.callback:Processing 0:Connection.Start
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>> for "0:Connection.Start"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', 'method=<Connection.StartOk([\'locale=en_US\', \'mechanism=PLAIN\', "client_properties={\'platform\': \'Python 2.6.7\', \'product\': \'Pika Python Client Library\', \'version\': \'0.9.8\', \'capabilities\': {\'consumer_cancel_notify\': True, \'publisher_confirms\': True, \'basic.nack\': True}, \'information\': \'See http://pika.github.com\'}", \'response=\\x00guest\\x00guest\'])>'])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Tune(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.callback:Processing 0:Connection.Tune
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>> for "0:Connection.Tune"
+DEBUG:pika.connection:Creating a HeartbeatChecker: 600
+DEBUG:pika.adapters.select_connection:Will call <bound method HeartbeatChecker.send_and_check of <pika.heartbeat.HeartbeatChecker object at 0x109bc1d50>> on or after 1363703262
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.TuneOk(['frame_max=131072', 'channel_max=0', 'heartbeat=600'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(4)
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.Open(['insist=True', 'capabilities=', 'virtual_host=/'])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=0', "method=<Connection.OpenOk(['known_hosts='])>"])>
+DEBUG:pika.callback:Processing 0:Connection.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>> for "0:Connection.OpenOk"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Processing 0:_on_connection_open
+DEBUG:pika.callback:Calling <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x109add8f0>> for "0:_on_connection_open"
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_channel_closeok of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x109bc1dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x109bc1dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x109bc1dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x109bc1dd0>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.channel:Adding in on_synchronous_complete callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x109bc1dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.channel:Adding passed in callback
+DEBUG:pika.callback:Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x109bc1dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.Open(['out_of_band='])>"])>
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(4)
+DEBUG:pika.adapters.select_connection:Calling <bound method SelectConnection._handle_events of <pika.adapters.select_connection.SelectConnection object at 0x109bc1a90>>(1)
+DEBUG:pika.connection:Frame: <METHOD(['frame_type=1', 'channel_number=1', "method=<Channel.OpenOk(['channel_id='])>"])>
+DEBUG:pika.callback:Processing 1:Channel.OpenOk
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x109bc1dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Processing use of oneshot callback
+DEBUG:pika.callback:0 registered uses left
+DEBUG:pika.callback:Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x109bc1dd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x109bc1dd0>> for "1:Channel.OpenOk"
+DEBUG:pika.channel:0 blocked frames
+DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x109bc1dd0>> for "1:Channel.OpenOk"
+ERROR:root:Could not open configuration file: /Users/jos/rapidomero/rapidomero/config.yaml,vh

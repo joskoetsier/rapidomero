@@ -1,12 +1,12 @@
 import pika
 import time
 import yaml
-import common.utils
+import rapidomero.common.utils
 import saga
 from threading import Thread
 import logging
-import streaming.context
-import streaming.operations
+import rapidomero.streaming.context
+import rapidomero.streaming.operations
 
 class Job_handler(Thread):
     def __init__(self, queue_config, variables, reply_to, event):

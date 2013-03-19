@@ -5,7 +5,7 @@ import time
 import jobhandler
 import functools
 import threading
-import common.config as config
+import rapidomero.common.config as config
 
 class AMQPLoop:
     
@@ -14,6 +14,7 @@ class AMQPLoop:
     __event = threading.Event()
     __max_threads =5 
     __thread_list = []
+    __path_to_config = None
     # Step #2
     @classmethod
     def __on_connected(self, connection):
@@ -27,7 +28,7 @@ class AMQPLoop:
         """Called when our channel has opened"""
         AMQPLoop.__channel = new_channel
         """Add a queue for each element in config"""
-        queue_configs = config.get_queue_configs()
+        queue_configs = config.get_queue_configs(AMQPLoop.__path_to_config)
         for queue_config in queue_configs:
             print "Channel open for: "+queue_config["queue"]
             AMQPLoop.__channel.queue_declare(queue=queue_config["queue"], durable=True, exclusive=False, auto_delete=False, 
@@ -67,7 +68,8 @@ class AMQPLoop:
                 AMQPLoop.__thread_list.remove(h)
 
     @classmethod
-    def start(self, ):
+    def start(self, path_to_config):
+        AMQPLoop.__path_to_config = path_to_config
         parameters = pika.ConnectionParameters()
         connection = pika.SelectConnection(parameters, AMQPLoop.__on_connected)
         

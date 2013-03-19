@@ -1,0 +1,7 @@
+LICENSE.txt
+logfile.txt
+setup.py
+bin/startloop.py
+rapidomero/__init__.py
+rapidomero/sendjob.py
+rapidomero/test.py

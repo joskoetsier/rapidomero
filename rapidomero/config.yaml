@@ -1,0 +1,29 @@
+- Queue: pyramid
+  Host: 127.0.0.1
+  Job:
+    Executable: /exports/home/jkoetsie/run.sh
+    Output: /exports/home/jkoetsie/outhost.txt
+    Error: /exports/home/jkoetsie/outerr.txt
+    Arguments: ["${ID}", "${H}", "${V}"]  
+    WorkingDirectory: /exports/home/jkoetsie/pyramid/omero/target
+    Queue: ecdf
+    SPMDVariation: memory-2G
+    Total_CPU_Count: 2
+  Service: 
+    Name: eddie 
+    Resource: sge 
+    Connection: ssh 
+    Host: frontend03.ecdf.ed.ac.uk
+    UserId: jkoetsie 
+    UserKey: /Users/jos/.ssh/id_rsa
+    UserCert: /Users/jos/.ssh/id_rsa.pub 
+    Pollingtime: 1 
+- Queue: pyramidft
+  Host: 127.0.0.1
+  Files:
+    - Target:
+       URL:  sftp://frontend03.ecdf.ed.ac.uk/exports/home/jkoetsie/pyramid/omero/target/test/Pixels/
+       UserId: jkoetsie
+       UserKey: /Users/jos/.ssh/id_rsa
+      Source:
+       URL:  file:///Users/jos/${ID}   
