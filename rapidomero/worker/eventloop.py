@@ -15,14 +15,19 @@ class AMQPLoop:
     __max_threads =5 
     __thread_list = []
     __path_to_config = None
-    # Step #2
+
+    """
+        Called when the connection to AMQP server is established. Then calls _on_channel_open
+    """
     @classmethod
     def __on_connected(self, connection):
         """Called when we are fully connected to RabbitMQ"""
         # Open a channel
         connection.channel(AMQPLoop.__on_channel_open)
     
-    # Step #3
+    """
+        Opens a channel for each queue in queue_config. Then calls _on_queue_declared
+    """
     @classmethod
     def __on_channel_open(self, new_channel):
         """Called when our channel has opened"""
@@ -34,16 +39,19 @@ class AMQPLoop:
             AMQPLoop.__channel.queue_declare(queue=queue_config["queue"], durable=True, exclusive=False, auto_delete=False, 
                                              callback=functools.partial(AMQPLoop.__on_queue_declared, queue_config=queue_config))
 
-    # Step #4
+    """
+        Calls ___handle_delivery when messages arrive
+    """
     @classmethod
     def __on_queue_declared(self, frame, queue_config=None):
-        """Called when RabbitMQ has told us our Queue has been declared, frame is the response from RabbitMQ"""
-        """Add partial function so we can pass the name of the queue to __handle_delivery"""
         print "Consume at: "+queue_config["queue"]
         AMQPLoop.__channel.basic_consume(functools.partial(AMQPLoop.__handle_delivery, queue_config=queue_config), 
                                          queue=queue_config["queue"])
     
-    # Step #5
+    """
+        Called when a message appears on the queue . Starts a job handler and checks
+        There are not too many job handlers running at the same time.
+    """
     @classmethod
     def __handle_delivery(self, channel, method, properties, body, queue_config):
         """Called when we receive a message from RabbitMQ"""
@@ -67,6 +75,11 @@ class AMQPLoop:
             if h.isAlive() is False:
                 AMQPLoop.__thread_list.remove(h)
 
+    """
+        Starts the event loop. 
+        @param path_to_config: path to the config.yaml file
+        @type path_to_config: string 
+    """
     @classmethod
     def start(self, path_to_config):
         AMQPLoop.__path_to_config = path_to_config

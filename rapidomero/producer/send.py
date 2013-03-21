@@ -11,10 +11,19 @@ logging.basicConfig()
 
 class sender:
 
+    """
+        Constructor. Initialises the sender with a queue_config object
+    """
     def __init__(self, queue_config):
         self._queue_config = queue_config
         
-        
+    """
+        Sends the job to the queue.
+        @param variables: Dictionary of variable->value pairs to send to the job queue
+        @type variables: dict
+        @return: job id to identify this particular job
+        @rtype: string
+    """    
     def send_job(self, variables):
         
         jobid = str(uuid.uuid1())
@@ -36,7 +45,13 @@ class sender:
         
         return jobid
       
-        
+    """
+        listens to the reply queue. When the queue changes, 'callback' is called.
+        @param jobid: Job ID of the job to monitor
+        @type jobid: string
+        @param callback: callback function
+        @type callback: function
+    """
     def consume_status(self, jobid, callback):    
         self._channel.queue_declare(queue=jobid, auto_delete=True)
   

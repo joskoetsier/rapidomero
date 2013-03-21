@@ -9,9 +9,18 @@ import rapidomero.streaming.context
 import rapidomero.streaming.operations
 
 class Job_handler(Thread):
+    
+    """
+        Constructs job handler
+        @param queue_config: configuration of the queue
+        @type queue_config: dict
+        @param reply_to: queue name to reply messages to
+        @type reply_to: string
+        @param event: Used to ensure not too many threads run at once.
+        @type event: threading.Event
+    """
     def __init__(self, queue_config, variables, reply_to, event):
         super(Job_handler, self).__init__()
-        #variables_all_strings = dict((str(k), str(v)) for k, v in variables)
         self._queue_config = common.utils.resolve(queue_config, variables)
         self._reply_to = reply_to
         self._event = event
@@ -23,6 +32,9 @@ class Job_handler(Thread):
                 
         logging.log(logging.DEBUG, queue_config)
                 
+    """
+        Runs the job. 
+    """
     def run(self):
         if self._job is not None and self._service is not None:
             self.do_job()
@@ -30,6 +42,11 @@ class Job_handler(Thread):
             for f in self._files:
                 self.do_file(f) 
 
+    """
+        The job is a file transfer job. 
+        @type file_element: dictionary
+        @param file_element: file transfer portion of the config.yaml file
+    """
     def do_file(self, file_element):
         source = file_element.get("source")
         target = file_element.get("target")
@@ -69,6 +86,9 @@ class Job_handler(Thread):
         
         self._event.set() 
         
+    """
+        Its a computational job.
+    """
     def do_job(self):
         connection_method = self._service["connection"] #either local, ssh or gsissh
         resource = self._service["resource"] #either fork, pbs, torque
@@ -139,7 +159,6 @@ class Job_handler(Thread):
                 time.sleep(polling_time)
                 newjobstate = thejob.get_state()
             jobstate = newjobstate 
-            print str(jobstate)  
             reply["message"] = ""
             reply["status"] =  str(jobstate)
             message = yaml.dump(reply)

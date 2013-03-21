@@ -935,3 +935,12 @@ DEBUG:pika.callback:Calling <bound method Channel._on_synchronous_complete of <p
 DEBUG:pika.channel:0 blocked frames
 DEBUG:pika.callback:Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x109bc1dd0>> for "1:Channel.OpenOk"
 ERROR:root:Could not open configuration file: /Users/jos/rapidomero/rapidomero/config.yaml,vh
+DEBUG:pika.callback:Added: {'callback': <bound method classobj.__on_connected of <class rapidomero.worker.eventloop.AMQPLoop at 0x1edec18>>, 'only': None, 'one_shot': False, 'arguments': None}
+DEBUG:pika.callback:Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x1edffd0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+DEBUG:pika.connection:Attempting connection
+DEBUG:pika.adapters.base_connection:Connecting the adapter to the remote host
+DEBUG:pika.adapters.base_connection:Creating the socket
+INFO:pika.adapters.base_connection:Connecting fd 3 to localhost:5672
+ERROR:pika.adapters.base_connection:socket error: Connection refused
+WARNING:pika.adapters.base_connection:Could not connect due to "Connection refused," retrying in 2 sec
+ERROR:pika.adapters.base_connection:Could not connect: Connection refused

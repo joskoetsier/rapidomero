@@ -1,11 +1,11 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='RapidOmero',
     version='0.1.0',
     author='Jos Koetsier',
     author_email='joskoetsie@staffmail.ed.ac.uk',
-    packages=['rapidomero'],
+    packages=['rapidomero', 'rapidomero.worker', 'rapidomero.producer', 'rapidomero.streaming', 'rapidomero.common'],
     scripts=['bin/startloop.py'],
     license='LICENSE.txt',
     description='Rapid Omero event loop',
