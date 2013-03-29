@@ -6,7 +6,7 @@ setup(
     author='Jos Koetsier',
     author_email='joskoetsie@staffmail.ed.ac.uk',
     packages=['rapidomero', 'rapidomero.worker', 'rapidomero.producer', 'rapidomero.streaming', 'rapidomero.common'],
-    scripts=['bin/startloop.py'],
+    scripts=['bin/startworker.sh'],
     license='LICENSE.txt',
     description='Rapid Omero event loop',
     install_requires=[
