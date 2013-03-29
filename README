@@ -1,0 +1,57 @@
+Usage:
+
+startworker <path-to-config-file>
+
+The Config file is a YAML formatted file that defines a list of queues.
+
+- Queue: [name]  					#define a new queue with 'name'
+  Host: [hostname | ip address] 	#address of the queueing server
+  [Job | Service | Files] 			#definition of a job or file transfer
+- Queue: [name2]
+  Host ..[hostname2 | ip address2]
+  ...
+
+In the config.yaml file a job is defined as
+
+   Job:
+	 executable [name] 	#Path to the executable to execute
+	 output	[path]		#File to stream the standard output to 
+	 error  [path]		#File to stream the standard error to
+	 arguments [list of arguments] #List of arguments
+	 environment [list of name:value pairs] #List of environment variables
+	 workingdirectory [path] 	#Path of the working directory
+	 queue [name] 				#Name of the queue of the remote compute resource
+	 walltimelimit [number]		#Maximum Time the job can run
+	 numberofprocesses [number]	#Number of processes to start
+	 spmdvariation	[pe]		#SPMD environment. Implemented as parallel environment in SGE
+	 totalcpucount [number]		#Number of CPUs requested for this job (second parameter of -pe)
+	 
+
+When Specifying a Job, this section should be followed by a Service.
+
+	Service:
+      Name: eddie 
+      Resource: [SGE|CONDOR|SLURM|FORK|PBS] #resource type to use
+      Connection: [SSH|LOCAL] #connection type
+      Host: [host]  	#Hostname or IP address
+      UserId: [name]    #Name of the user
+      UserKey: [path]   #Path to the ssh key 
+      Pollingtime: [number]    #Time between polls
+
+For each queue either a 'JOB' or a 'FILES' section should be specified. A 'FILES' section contains file transfers.
+
+	Files:
+    - Target:
+       URL:  [target URL]  #Target URL. Either sftp://[hostname]/[path] or file://localhost/[path]
+       UserId: [name] 	   #User name
+       UserKey: [path]     #Path the ssh key
+       Password [password] #Password
+      Source:
+       URL:  [source URL] 	#See target
+       UserId: [name] 		#See target
+       UserKey: [path] 		#See target
+       Password: [password] #See target
+    - Target:
+      ...
+      Source: 
+      ...
