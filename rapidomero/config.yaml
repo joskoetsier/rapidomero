@@ -1,3 +1,18 @@
+- Queue: condor
+  Host: 127.0.0.1
+  Job:
+    Executable: /bin/echo
+    Output: /tmp/outhost.txt
+    Error: /tmp/outerr.txt
+    Arguments: ["jos"]  
+  Service: 
+    Name: condor 
+    Resource: condor 
+    Connection: ssh 
+    Host: escience4.inf.ed.ac.uk
+    UserId: jos 
+    UserKey: /Users/jos/.ssh/id_rsa
+    Pollingtime: 10 
 - Queue: pyramid
   Host: 127.0.0.1
   Job:

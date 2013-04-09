@@ -21,7 +21,7 @@ class Job_handler(Thread):
     """
     def __init__(self, queue_config, variables, reply_to, event):
         super(Job_handler, self).__init__()
-        self._queue_config = common.utils.resolve(queue_config, variables)
+        self._queue_config = rapidomero.common.utils.resolve(queue_config, variables)
         self._reply_to = reply_to
         self._event = event
         self._queue_name = self._queue_config.get("queue")
@@ -113,7 +113,7 @@ class Job_handler(Thread):
             ctx.type = 'ssh'
             ctx.user_id  = self._service["userid"] # your identity on the remote machine
             ctx.user_key = self._service["userkey"] # ssh key to use (only necessary if in non-default location)
-            ctx.user_cert = self._service["usercert"] # ssh key to use (only necessary if in non-default location)
+            #ctx.user_cert = self._service["usercert"] # ssh key to use (only necessary if in non-default location)
         
         ses = saga.Session()
         ses.contexts.append(ctx)
@@ -122,10 +122,10 @@ class Job_handler(Thread):
         jobstate = None
         reply = dict()    
         js = saga.job.Service(url,session=ses) 
-        thejob = js.create_job(common.utils.dict_to_description(self._job))
+        thejob = js.create_job(rapidomero.common.utils.dict_to_description(self._job))
         try:          
             js = saga.job.Service(url,session=ses)
-            thejob = js.create_job(common.utils.dict_to_description(self._job))
+            thejob = js.create_job(rapidomero.common.utils.dict_to_description(self._job))
             thejob.run()
             print "Started Job: "
             print self._job
